@@ -1,0 +1,39 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            Usuário: <input type="text" id="userInput" />
+        </div>
+        <div class="col-6">&nbsp;</div>
+    </div>
+    <div class="row">Votação: Qual sua Stack?&nbsp;</div>
+    <div class="row">
+        <div class="col-12">
+            <!-- input type="radio" name="group1" id="r1" value="1" /><label for="r1"> button one</label>-->
+
+            <input type="radio" name="myChannel" id="FrontEnd" value="Front-End" />
+            <label for="Fulano1">Front-End</label>
+            <br /><span id="Front-EndBlock"></span><br />
+            <input type="radio" name="myChannel" id="BackEnd" value="Back-End" />
+            <label for="Fulano2">Back-End</label>
+            <br /><span id="Back-EndBlock"></span><br />
+            <input type="radio" name="myChannel" id="FullStack" value="FullStack" />
+            <label for="Fulano3">FullStack</label>
+            <br /><span id="FullStackBlock"></span><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input class="btn btn-primary" type="button" id="sendButton" value="Vote Agora" />
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/poll.js"></script>
